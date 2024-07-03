@@ -1,0 +1,191 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; /* setting font for the body's text*/
+    margin: 0; 
+    padding: 0; 
+    background-color: #8b9493; /*background color besides the wrapper's content */
+}
+/* styling for the whole website page */
+.wrapper {
+    margin: 0 auto; 
+    width: 1000px; 
+    background-color: #a5ede4;
+}
+
+header{
+    text-align: center; /*bringing the header text to center*/
+    color: white; /*color of the text white */
+    position: relative; /*for positioning the title*/
+}
+header img{
+    width: 100%; /*making image of full width*/
+    height: auto; 
+
+} 
+
+header h1 {
+    position: absolute; /*positioning the title absolutely within the header*/
+    bottom: -22px; /*positioning from the bottom*/
+    left: 50%; /*center horizontally*/
+    transform: translate(-50%,-50%); /*Adjust position*/
+    color: #fff;  
+    font-size: 4em;
+    padding: 10px;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /*removing list style*/
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex; /* using flexbox for aligning the content*/
+    justify-content: center; /* center items horizontally*/
+    align-items: center; /* center items vertically*/
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 auto; /*add horizontal margin */
+}
+
+nav ul li a {
+    /* font-weight: bold; */
+    text-decoration: none; /* remove underline from links */
+    color: black; 
+    font-size: 1.5em;
+    padding: 0 15px;
+    display: inline-block;
+    position: relative;
+
+}
+
+nav ul li:not(:last-child) a::after {
+    content: '|'; /* adding separator after each link except the last one*/
+    position: absolute; /* position the separator absolutely */
+    right: -98px;/* position from the right */
+    top: 0; 
+    bottom: 0;
+    
+}
+article {
+    padding: 20px;
+    text-align: justify;
+    margin: 20px auto;
+    line-height: 2; /* setting line height*/
+}
+
+article p{
+    font-weight: bold;
+}
+
+.art {
+    float: left; /*image floats to the left*/
+    margin: 0 15px 15px 0;
+    width: 350px;
+    height: 350px;
+
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    line-height: 1.6;
+
+}
+
+section ul {
+    list-style-type: disc; /* set the list style type to disc */
+    padding-left: 20px; /*doing padding left so that the header and the list can be in the same vertical line as shown in the mockup*/
+    font-weight: bold;
+}
+
+form{
+    padding: 14px;
+    display: flex; /*flexbox for layout*/
+    flex-direction: column; /* set flex direction to column*/
+    gap: 10px; /*add gap between items*/
+    border: 1px solid black; /* add border */
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.radio-buttons {
+    margin-top: 10px; /*spacing between the label and radio buttons*/
+}
+
+.radio-buttons label {
+    display: inline; /*ensuring the label is on a separate line*/
+    font-weight: bold;
+    margin-bottom: 10px ;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 5px; /*adding margin to the right */
+}
+
+.radio-buttons span {
+    margin-right: 15px; /*space between each radio sets*/
+}
+form button {
+    width: 100px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none; /*removing border */
+    cursor: pointer; /*setting cursor to pointer*/
+}
+
+
+form button:hover {
+    background-color: #555; /*changes background color of the button on hover*/
+}
+
+/* Footer styling */
+footer {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
