@@ -138,15 +138,10 @@ form button {
     width: 100px;
     padding: 10px;
     font-size: 1em;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     border: none; /*removing border */
     cursor: pointer; /*setting cursor to pointer*/
-}
-
-
-form button:hover {
-    background-color: #555; /*changes background color of the button on hover*/
 }
 
 /* Footer styling */
