@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light background color */
+}
+
+h1 {
+    text-align: center;
+    color: #2e4053; /* Dark blue for the main title */
+}
+
+h2, h3 {
+    color: #4a90e2; /* Bright blue for section titles */
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+/* Header and Navigation */
+header {
+    background: #e2eafc; /* Light blue background for header */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e4053; /* Link color */
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #4a90e2; /* Highlight color on hover */
+    color: white; /* White text on hover */
+    border-radius: 5px;
+}
+
+/* Search Form */
+.search-form {
+    margin-left: auto; /* Align search form to the right */
+    display: flex;
+}
+
+.search-form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Rounded corners for input */
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4a90e2; /* Button background color */
+    color: white;
+    border-radius: 0 5px 5px 0; /* Rounded corners for button */
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #357ab8; /* Darker blue on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limit width of main content */
+    margin: 0 auto; /* Center the main content */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.about-box {
+    background: #e9f5fb; /* Light blue background for about section */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Gallery Section */
+.gallery-container {
+    display: flex;
+    justify-content: space-around; /* Space between gallery items */
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white; /* White background for cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px; /* Fixed width for gallery items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.cat-image {
+    width: 100%;
+    height: auto;
+}
+
+.download-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    color: white; /* Download icon color */
+}
+
+.image-wrapper:hover .download-icon {
+    display: block; /* Show download icon on image hover */
+}
+
+/* Contact Section */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab8; /* Darker button color on hover */
+}
+
+
+footer {
+    background: #e2eafc;
+    padding: 15px 0;
+}
+
+.social-media-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #2e4053; /* Social icon color */
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #4a90e2; /* Change color on hover */
+}
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An accessible gallery showcasing cute cats with a focus on web accessibility and responsive design.">
+    <meta name="keywords" content="accessible, cat gallery, cute cats, web accessibility, responsive design">
+    <meta name="author" content="Your Name">
+    <title>Accessible Cat Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Section with Navigation -->
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+        <h1 itemprop="headline">Welcome to the Accessible Cat Gallery</h1>
+        <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <ul>
+                <li><a href="#gallery" title="Go to the gallery section">Gallery</a></li>
+                <li><a href="#about" title="Learn more about us">About</a></li>
+                <li><a href="#contact" title="Get in touch with us">Contact</a></li>
+            </ul>
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Search pictures..." aria-label="Search pictures" required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" role="main" itemscope itemtype="https://schema.org/WebPageElement">
+        <!-- Gallery Section -->
+        <section id="gallery" aria-labelledby="gallery-heading" itemscope itemtype="https://schema.org/ImageGallery">
+            <h2 id="gallery-heading" itemprop="name">Cat Images</h2>
+            <p>Explore our collection of adorable cat images below:</p>
+            <div class="gallery-container">
+                <figure class="card" itemscope itemtype="https://schema.org/ImageObject">
+                    <div class="image-wrapper">
+                        <img src="https://placecats.com/millie_neo/300/200" alt="A cute cat relaxing" class="cat-image" itemprop="contentUrl" />
+                        <a href="https://placecats.com/millie_neo/300/200" download class="download-icon" title="Download this image">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <figcaption itemprop="caption">A cute cat relaxing.</figcaption>
+                </figure>
+        
+                <figure class="card" itemscope itemtype="https://schema.org/ImageObject">
+                    <div class="image-wrapper">
+                        <img src="https://placecats.com/400/300" alt="Another adorable cat sitting" class="cat-image" itemprop="contentUrl" />
+                        <a href="https://placecats.com/400/300" download class="download-icon" title="Download this image">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <figcaption itemprop="caption">Another adorable cat.</figcaption>
+                </figure>
+        
+                <figure class="card" itemscope itemtype="https://schema.org/ImageObject">
+                    <div class="image-wrapper">
+                        <img src="https://placecats.com/bella/300/200" alt="Playful kitten playing with a toy" class="cat-image" itemprop="contentUrl" />
+                        <a href="https://placecats.com/bella/300/200" download class="download-icon" title="Download this image">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <figcaption itemprop="caption">A playful kitten.</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section id="about" aria-labelledby="about-heading" itemscope itemtype="https://schema.org/AboutPage">
+            <h2 id="about-heading" itemprop="headline">About Us</h2>
+            <div class="about-box" itemprop="description">
+                <p>Welcome to the Accessible Cat Gallery! Our mission is to bring joy and happiness to cat enthusiasts worldwide by sharing a collection of the cutest and most delightful cat images on the internet. We believe that everyone deserves access to a little bit of cuteness every day, regardless of any limitations they may face.</p>
+        
+                <h3>Our Mission</h3>
+                <p>Our mission is to create an inclusive, accessible, and user-friendly platform where people from all walks of life can enjoy the beauty and charm of cats. We aim to provide a seamless experience for individuals with disabilities by adhering to web accessibility standards, ensuring that everyone can navigate, enjoy, and interact with our content effortlessly.</p>
+        
+                <h3>Our Vision</h3>
+                <p>We envision a world where the joy of seeing a cute cat can brighten anyone's day, no matter where they are or what device they're using. By showcasing diverse cat images and ensuring our website is built with accessibility in mind, we hope to set an example for how digital content can be made more inclusive and enjoyable for all.</p>
+        
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Accessibility:</strong> We are committed to making our website accessible to everyone, regardless of abilities or disabilities, by following best practices and guidelines such as WCAG (Web Content Accessibility Guidelines).</li>
+                    <li><strong>Inclusivity:</strong> We believe in celebrating diversity and making sure that every visitor feels welcome and represented in our cat gallery.</li>
+                    <li><strong>Quality:</strong> We strive to curate the cutest and highest-quality cat images that bring joy, warmth, and smiles to our visitors.</li>
+                    <li><strong>Community:</strong> We value the community of cat lovers and enthusiasts who contribute to making this gallery a happy and positive space. We encourage sharing, caring, and spreading love for cats everywhere.</li>
+                </ul>
+        
+                <h3>Why Choose Us?</h3>
+                <p>At Accessible Cat Gallery, we don't just share cat images; we create an experience. Our gallery is carefully curated to feature cats of all shapes, sizes, and personalities, from playful kittens to majestic felines. Our dedication to accessibility ensures that everyone, including people with disabilities, can fully enjoy our content without barriers.</p>
+        
+                <p>We continuously work to improve the accessibility and user experience of our website by incorporating features such as keyboard navigation, screen reader compatibility, and high-contrast elements. We also welcome feedback and suggestions from our visitors on how we can make this space even more inclusive and enjoyable.</p>
+        
+                <p>Thank you for visiting the Accessible Cat Gallery. We hope our collection of cat images brings a smile to your face and brightens your day!</p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading" itemscope itemtype="https://schema.org/ContactPage">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form role="form" itemscope itemtype="https://schema.org/ContactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required aria-required="true" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="example@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Write your message here"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <p>&copy; 2024 Accessible Cat Gallery. All rights reserved.</p>
+        <nav aria-label="Social Media Links" class="social-media-nav">
+            <ul>
+                <li><a href="#" class="social-icon" aria-label="Facebook" title="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="social-icon" aria-label="Twitter" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-icon" aria-label="Instagram"
